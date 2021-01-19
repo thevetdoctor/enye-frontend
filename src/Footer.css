@@ -1,0 +1,69 @@
+.footer {
+    position: fixed;
+    bottom: -1em;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0 2em 0;
+    display: flex;
+    line-height: 0.9;
+    margin-top: 6em;
+  }
+  
+.links {
+    width: 60%;
+    display: flex;
+    margin-left: .4em;
+    justify-content: space-between;
+    font-size: 1.5em;
+    align-self: center;
+  }
+  
+.links a {
+    color: #fff;
+  }
+  
+  .fb {
+    background-color: #3b5998;
+    border-radius: 0.2em;
+    /* padding: 0.1em; */
+  }
+  
+  .twitter {
+    background-color: #00acee;
+    border-radius: 0.2em;
+  }
+  
+  .insta {
+    background-color: rgb(240, 12, 12);
+    /* color: #3f729b; */
+    border-radius: 0.2em;
+  }
+
+@media screen and (min-width: 400px) {
+  .footer {
+    position: fixed;
+    bottom: -1em;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0 2em 0;
+    display: flex;
+    justify-content: space-around;
+    line-height: 0.9;
+    margin-top: 6em;
+  }
+
+    .links {
+        width:15%;
+        display: flex;
+        margin-left: .4em;
+        justify-content: space-between;
+        font-size: 1.5em;
+        align-self: center;
+      }
+
+      .design-tag {
+        align-self: center;
+      }
+}

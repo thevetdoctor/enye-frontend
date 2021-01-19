@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0em;
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

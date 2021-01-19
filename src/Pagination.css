@@ -1,0 +1,22 @@
+.pagination {
+    padding: 1em;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.pageClick {
+    padding: 0.15em 1em;
+    background-color: lightslategrey;
+    color: #fff;
+}
+
+.btn {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+    .pagination {
+        margin-bottom: 3em;
+    }
+}

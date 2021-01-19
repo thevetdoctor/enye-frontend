@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "build",
+    "site": "enye-challenge-2011",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
