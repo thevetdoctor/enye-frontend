@@ -6,7 +6,7 @@ export default function Pagination({ page, totalPages, handlePageClick }) {
     return (
         <div className='pagination'>
             <button
-                className='btn'
+                className='btn prev'
                 onClick={() => handlePageClick('prev')}
                 disabled={page <= 1}
             >
@@ -16,7 +16,7 @@ export default function Pagination({ page, totalPages, handlePageClick }) {
                 page {page} of {totalPages}
             </span>
             <button
-                className='btn'
+                className='btn next'
                 onClick={() => handlePageClick('next')}
                 disabled={page >= totalPages}
             >

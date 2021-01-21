@@ -8,10 +8,11 @@ body {
 }
 
 html {
-  background-image: url('./fintech.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url('./fintech.jpg'); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-color: #DAE4F1;
 }
 
 code {

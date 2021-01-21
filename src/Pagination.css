@@ -5,14 +5,27 @@
 }
 
 .pageClick {
-    padding: 0.15em 1em;
+    padding: 0.23em 1em;
     background-color: lightslategrey;
     color: #fff;
 }
 
 .btn {
-    font-size: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
     cursor: pointer;
+    border: none;
+    color: #fff;
+    background-color: #2A4773;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+.btn:disabled {
+    background-color: grey;
+    cursor: default;
 }
 
 @media screen and (min-width: 400px) {

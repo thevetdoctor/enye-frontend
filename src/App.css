@@ -2,13 +2,14 @@
   text-align: center;
   box-sizing: border-box;
   font-size: 0.9em;
+  /* background-color: #998888; */
 }
 
 .navbar {
   position: fixed;
   top: 0em;
   width: 100vw;
-  background-color: #000;
+  background-color: #152439;
   color: #fff;
 }
 

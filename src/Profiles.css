@@ -1,10 +1,12 @@
 .profiles {
-    background-color: 998888;
     margin-top: 5.5em;
     margin-bottom: 4.5em;
     color: #fff;
 }
 
+.profiles h3 {
+    color: #355990;
+}
 .profile__display {
     display: flex;
     flex-flow: column wrap;
@@ -17,13 +19,12 @@
     justify-content: flex-start;
     text-align: start;
     padding: 1em;
-    font-size: 1.1em;
-    background-color: #003152;
-    /* background-color: #1d2951; */
-    margin: 1em;
+    background-color: #1B2D48;
+    color: #fff;    margin: 1em;
     border-radius: 0.3em;
-    box-shadow: 0 5px 5px 5px rgba(0,225,225,0.4);
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.4);
     overflow: scroll;
+    font-size: 1.2em;
 }
 
 .profile__div span {
@@ -32,14 +33,12 @@
 }
 
 .profile__div:hover {
-    background-color: whitesmoke;
-    color: #000;
+  background-color: #355990;
+  color: #fff;
 }
 
 @media screen and (min-width: 400px) {
     .profiles {
-        background-color: 998888;
-        color: #fff;
         margin: 5.5em 5% 4.5em 5%;
     }  
     
