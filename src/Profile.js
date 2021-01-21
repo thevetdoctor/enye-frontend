@@ -1,4 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { 
+    FaEnvelope, 
+    FaMobileAlt, 
+    FaMale, 
+    FaFemale, 
+    FaUser,
+    FaCreditCard,
+    FaCcAmazonPay,
+    FaGenderless} from 'react-icons/fa';
+import { SiWebmoney } from 'react-icons/si';
+import { MdAccessTime, MdComputer, MdHttp } from 'react-icons/md';
+import { BiWorld } from 'react-icons/bi';
+import Moment from 'react-moment';
+
 
 export default function Profile({profile}) {
     // console.log(profile);
@@ -8,40 +22,40 @@ export default function Profile({profile}) {
         >
             {/* <span>{ + 1}</span> */}
             <span>
-                Name: {profile.FirstName} {profile.LastName}
+                {profile.Gender === 'Male' ? <FaMale size='1em' /> : (profile.Gender === 'Female') ? <FaFemale size='1em' /> :   <FaGenderless />}: {profile.FirstName} {profile.LastName}
             </span>
             <span>
-                Username: {profile.UserName}
+                <FaUser />:   {profile.UserName}
             </span>
             <span>
-                Gender: {profile.Gender}
-            </span>
-            <span>
-                Domain: {profile.DomainName}
+                <SiWebmoney />:   {profile.DomainName}
             </span> 
             <span>
-                Email: {profile.Email}
+                <FaEnvelope />:    {profile.Email}
             </span>
             <span>
-                Location: Lat: {profile.Latitude}, Long: {profile.Longitude}
+                <BiWorld />: <span>Lat: {profile.Latitude.toFixed(2)}, Long: {profile.Longitude.toFixed(2)}</span>
             </span>
             <span>
-                URL: {profile.URL}
+                <MdHttp />: <span>{profile.URL}</span>
             </span>
             <span>
-                Mac Address: {profile.MacAddress}
+                <MdComputer />: {profile.MacAddress}
             </span>
             <span>
-                Mobile: {profile.PhoneNumber}
+                <FaMobileAlt />: {profile.PhoneNumber}
                 </span>
             <span>
-                Payment Method: {profile.PaymentMethod}
+                <FaCcAmazonPay />: {profile.PaymentMethod}
             </span>
             <span>
-                Card Type: {profile.CreditCardType}
+                <FaCreditCard />: {profile.CreditCardType}
             </span>
             <span>
-                Last Login: {profile.LastLogin}
+                <MdAccessTime />: 
+                    <Moment fromNow>
+                        {profile.LastLogin}
+                    </Moment>
             </span>       
         </div>
     )

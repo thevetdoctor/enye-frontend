@@ -10,6 +10,7 @@ select, option {
     /* border-bottom: 1px solid gray; */
     align-self: flex-start;
     /* position: relative; */
+    outline: none;
 }
 
 option {

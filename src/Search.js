@@ -16,9 +16,17 @@ export default function Search({ data }) {
     const handleChange = (e) =>  {
         const inputValue = e.target.value;
         console.log(inputValue);
+        setClicked(false);
         dispatch({
             type: 'SET_SEARCH',
             data: inputValue
+        });
+    }
+
+    const handleSearchQuery = (e) => {
+        console.log(searchQuery, e);
+        dispatch({
+            type: 'CLEAR_SEARCH'
         });
     }
 
@@ -65,16 +73,29 @@ export default function Search({ data }) {
         profileSearch();
     }, [searchQuery]);
 
+    const closeBtnStyle = {
+        color: 'white', 
+        fontSize: '1.2em', 
+        padding: '0.2em', 
+        margin: 0, 
+        cursor: 'pointer', 
+        backgroundColor: 'grey'
+    };
+
     return (
             <div className='search'>
-                <div>
+                <div className='search__input'>
                     <input
                     type='text'
                     name='searchQuery'
                     placeholder='Search profile'
                     onChange={handleChange}
                     />
-                    {/* <span><img className='search-icon' src={searchicon} alt='search-icon'/></span> */}
+                    {searchQuery !== '' &&
+                        <span 
+                            style={closeBtnStyle} onClick={() => handleSearchQuery}>
+                            X
+                        </span>}
                 </div>
                 {loading && 
                 <Loader 

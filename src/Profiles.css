@@ -21,9 +21,14 @@
     background-color: #003152;
     /* background-color: #1d2951; */
     margin: 1em;
-    border-radius: 0.2em;
-    box-shadow: 2px 2px 2px 7px;
+    border-radius: 0.3em;
+    box-shadow: 0 5px 5px 5px rgba(0,225,225,0.4);
     overflow: scroll;
+}
+
+.profile__div span {
+    padding: 0.3em;
+    display: flex;
 }
 
 .profile__div:hover {

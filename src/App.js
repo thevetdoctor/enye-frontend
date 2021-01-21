@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Footer from './Footer';
 import './App.css';
 import Profiles from './Profiles.js';
+// import MyQuery from './TransactionDetails.js';
 import axios from 'axios';
 import { useEnyeState } from './EnyeProvider';
 
@@ -47,6 +48,7 @@ function App() {
           Enye Challenge 5.0
         </h2>
       </div>
+      {/* <MyQuery /> */}
       <Profiles />
       <Footer />
     </div>

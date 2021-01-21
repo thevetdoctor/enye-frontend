@@ -53,6 +53,12 @@ export default function reducer(state, action) {
         return {
             ...state, page: action.data
         }
+        
+        case "CLEAR_SEARCH":
+        // console.log(action.data);
+        return {
+            ...state, searchQuery: ''
+        }
             
         default:
         return state;
